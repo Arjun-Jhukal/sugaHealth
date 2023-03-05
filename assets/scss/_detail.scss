@@ -1,0 +1,202 @@
+.detail_page_wrapper {
+  p {
+    line-height: 2;
+    word-spacing: 2px;
+  }
+  .news_title {
+    padding: 15px 0;
+  }
+  .detail_featured_image {
+    margin: 30px 0;
+
+    img {
+      width: 100%;
+      height: 60vh;
+      border-radius: 5px 5px 0 0;
+    }
+  }
+
+  .from_writer {
+    background-color: $slightly_dark;
+    padding: 15px;
+    border-radius: 5px;
+    border: $border1;
+
+    .writer_box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .profile {
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  }
+
+  .react_box {
+    background-color: $slightly_dark;
+    padding: 50px 15px;
+    border-radius: 5px;
+
+    .react_options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      //   gap: 15px;
+
+      li {
+        width: 20%;
+        position: relative;
+        z-index: 0;
+        text-align: center;
+        cursor: pointer;
+
+        img {
+          max-width: 60px;
+          max-height: 60px;
+          display: block;
+          margin: 0 auto;
+        }
+        span {
+          &.react_name {
+            padding: 2px 15px;
+            border-radius: 25px;
+          }
+
+          &.smile_text {
+            background-color: $happy;
+          }
+          &.happy_text {
+            background-color: $shock;
+          }
+
+          &.surprised_text {
+            background-color: $energetic;
+          }
+
+          &.sad_text {
+            background-color: $sad;
+          }
+          &.angry_text {
+            background-color: $angry;
+          }
+        }
+
+        &:hover {
+          animation-name: reactionEmoji;
+          animation-duration: 0.6s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+        }
+
+        .bar {
+          span:first-child {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: $lightBlue_color;
+
+            &.angry_bar {
+              background-color: $angry;
+            }
+            &.smile_bar {
+              background-color: $happy;
+            }
+            &.happy_bar {
+              background-color: $shock;
+            }
+
+            &.surprised_bar {
+              background-color: $energetic;
+            }
+
+            &.sad_bar {
+              background-color: $sad;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.share_box {
+  padding: 15px;
+  border-radius: 5px;
+  border: $border1;
+  // margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $slightly_dark;
+
+  h6 {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  ul.socials {
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: $white;
+        @include transition1;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        i {
+          font-size: 16px;
+        }
+
+        &.facebook {
+          background-color: $facebook;
+        }
+
+        &.twitter {
+          background-color: $twitter;
+        }
+
+        &.messenger {
+          background-color: $messanger;
+        }
+        &.whatsapp {
+          background-color: $whatsapp;
+        }
+        &.node {
+          background-color: $shareNode;
+        }
+      }
+    }
+  }
+}
+
+@keyframes reactionEmoji {
+  0% {
+    transform: scale(0.2) translateY(0);
+  }
+  25% {
+    transform: scale(0.5) translateY(-3px);
+  }
+  50% {
+    transform: scale(0.8) translateY(-5px);
+  }
+  75% {
+    transform: scale(1.5) translateY(-8px);
+  }
+  100% {
+    transform: scale(1.1) translateY(-10px);
+  }
+}

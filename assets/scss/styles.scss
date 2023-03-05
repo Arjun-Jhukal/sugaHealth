@@ -1,0 +1,86 @@
+@import "mixin";
+@import "variable";
+@import "utility";
+@import "header";
+@import "featured";
+@import "hero";
+@import "aside";
+@import "categoryBox";
+@import "footer";
+@import "detail";
+@import "team";
+
+.search_bar {
+  background-color: #1f1f1f66;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+  @include transition1;
+
+  .search_form {
+    width: 60%;
+    background-color: $white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+
+  input {
+    border: none;
+    padding: 10px 15px;
+    // border-radius: 5px;
+
+    &:first-child {
+      width: 100%;
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      background-color: $lightYellow_color;
+      color: $white;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+
+  .close_search {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: $lightYellow_color;
+    color: $white;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+}
+
+#back_to_top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: $lightYellow_color;
+  color: $white;
+  padding: 8px 15px;
+  border-radius: 10px;
+
+  &:hover {
+    box-shadow: $box-shadow1;
+  }
+}

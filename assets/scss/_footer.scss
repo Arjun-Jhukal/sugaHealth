@@ -1,0 +1,71 @@
+.footer {
+  .main_footer {
+    background-color: $lightBlue_color;
+    padding: 50px 0 30px 0;
+    color: $white;
+  }
+
+  .footer_logo {
+    display: inline-block;
+    background-color: $white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  ul:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    &.contacts {
+      i {
+        margin-right: 5px;
+      }
+    }
+    li {
+      line-height: 2;
+    }
+  }
+}
+
+// Socails
+ul {
+  &.socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+    li {
+      a {
+        display: inline-block;
+        i {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+// copyright
+.footer {
+  .copywrite {
+    ul {
+      padding: 0;
+      text-align: center;
+      color: $white;
+
+      li {
+        background-color: #10858d;
+        padding: 15px 0;
+        line-height: 0;
+      }
+    }
+  }
+}

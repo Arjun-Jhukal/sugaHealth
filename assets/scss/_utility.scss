@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+body {
+  //   font-family: "Mukta", sans-serif; //For Normal Text
+  //   font-family: "Poppins", sans-serif; //For Menu
+  font-family: $font1;
+  background-color: $slightly_dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+p {
+  color: $black3;
+  font-size: 20px;
+}
+ul,
+li {
+  margin: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select,
+button {
+  //   border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lg_heading,
+.md_heading,
+.sm_heading {
+  font-family: $font1;
+  color: $black1;
+  font-weight: 600;
+  line-height: 1.2;
+  @include transition1;
+
+  &:hover {
+    color: $lightBlue_color;
+  }
+}
+
+.lg_heading {
+  font-size: 60px;
+}
+.md_heading {
+  font-size: 30px;
+}
+.sm_heading {
+  font-size: 20px;
+}
+
+.section_title {
+  color: $lightBlue_color;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .lg_heading {
+    font-size: 30px;
+  }
+  .md_heading {
+    font-size: 20px;
+  }
+  .sm_heading {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
