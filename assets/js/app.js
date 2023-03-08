@@ -40,11 +40,11 @@ const menuLeft = document.querySelector(".menu_left");
 const stickyHeader = () => {
   if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
     header.classList.add("sticky_header");
-    menuLeft.classList.add("sticky_active");
-    menuLogo.style.display = "inline-block";
+    // menuLeft.classList.add("sticky_active");
+    menuLeft.style.display = "flex";
   } else {
     header.classList.remove("sticky_header");
-    menuLogo.style.display = "none";
+    menuLeft.style.display = "none";
   }
 };
 
@@ -62,3 +62,20 @@ closeCanvas.addEventListener("click", () => {
   canvas.classList.remove("expand");
 });
 // };
+
+// Slick
+$(".slider-for").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".slider-nav",
+});
+$(".slider-nav").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: ".slider-for",
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+});

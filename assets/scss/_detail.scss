@@ -3,6 +3,27 @@
     line-height: 2;
     word-spacing: 2px;
   }
+
+  .news_detail {
+    strong {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-bottom: 15px;
+      li {
+        font-size: 20px;
+        color: $black3;
+        line-height: 1.8;
+
+        &::before {
+          content: "-";
+          display: inline-block;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
   .news_title {
     padding: 15px 0;
   }

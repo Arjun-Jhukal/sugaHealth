@@ -1,6 +1,6 @@
 .footer {
+  background-color: $lightBlue_color;
   .main_footer {
-    background-color: $lightBlue_color;
     padding: 50px 0 30px 0;
     color: $white;
   }
@@ -8,7 +8,7 @@
   .footer_logo {
     display: inline-block;
     background-color: $white;
-    width: 100%;
+    max-width: 60%;
     border-radius: 5px;
     padding: 15px;
 
@@ -18,16 +18,11 @@
     }
   }
 
-  ul:not(:last-child) {
-    margin-bottom: 20px;
+  h1.md_heading {
+    color: $white;
   }
 
   ul {
-    &.contacts {
-      i {
-        margin-right: 5px;
-      }
-    }
     li {
       line-height: 2;
     }
@@ -36,6 +31,8 @@
 
 // Socails
 ul {
+  padding: 0;
+
   &.socials {
     display: flex;
     justify-content: flex-start;
@@ -56,13 +53,13 @@ ul {
 // copyright
 .footer {
   .copywrite {
+    background-color: #10858d;
+    padding: 15px 0 0 0;
     ul {
-      padding: 0;
       text-align: center;
       color: $white;
 
       li {
-        background-color: #10858d;
         padding: 15px 0;
         line-height: 0;
       }

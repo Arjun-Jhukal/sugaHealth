@@ -73,6 +73,7 @@
 
 #back_to_top {
   position: fixed;
+  z-index: 111;
   right: 50px;
   bottom: 50px;
   background-color: $lightYellow_color;

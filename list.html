@@ -24,6 +24,10 @@
     <title>Suga Health - We Care About You</title>
   </head>
   <body>
+    <a href="#" id="back_to_top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
     <!-- Header -->
     <header class="header">
       <div class="top_bar py-4">
@@ -39,7 +43,7 @@
       <div class="container-fluid">
         <nav class="menu">
           <div class="menu_left">
-            <button class="hamburger d-lg-none">
+            <button class="hamburger">
               <span class="line"></span>
             </button>
 
@@ -52,7 +56,12 @@
           </div>
 
           <ul class="menu_items">
-            <li><a href="index.html">गृहपृष्ठ</a></li>
+            <li class="close d-lg-none">
+              <button>
+                <i class="fas fa-xmark"></i>
+              </button>
+            </li>
+            <li class="active"><a href="index.html">गृहपृष्ठ</a></li>
             <li><a href="list.html">मुख्य खबर</a></li>
             <li><a href="list.html">आँकडा</a></li>
             <li><a href="list.html">क्लिनिक</a></li>
@@ -83,12 +92,12 @@
                   <i class="fas fa-copy"></i>
                 </div>
                 <div class="title_text">
-                  <a href="list.html" class="sm_heading">डक्टर्स&nbsp;आर्टिकल</a>
+                  <a href="list.html" class="sm_heading">मुख्य खबर</a>
                 </div>
               </div>
-              <div class="heading_btn">
+              <!-- <div class="heading_btn">
                 <a href="list.html" class="view_all_btn">सबै</a>
-              </div>
+              </div> -->
             </div>
 
             <div class="news_box">
@@ -97,7 +106,7 @@
                   <img src="./assets/img/list/07.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
+                  <a href="detail.html" class="sm_heading">अमेरिकाले दिएको थप १० लाख डोज फाइजर खोप आइपुग्यो</a>
                   <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
                 </div>
               </div>
@@ -106,8 +115,8 @@
                   <img src="./assets/img/list/08.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">होलीमा रासायनिक रंगको दुष्प्रभाव बाट बच्ने उपाय</a>
+                  <p>काठमाडौं- होली रंगहरुको पर्व हो । खुशीको पर्व हो। यो पर्वमा...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -115,8 +124,8 @@
                   <img src="./assets/img/list/01.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading"> प्रारम्भिक यौवन: मोटोपनाको कारण समयअघि बढ्दै बच्चाहरू, रोकथामका उपाय</a>
+                  <p>काठमाडौं- किशोरावस्थामा केटाकेटीहरूको शरीरमा धेरै परिवर्तनहरू सुरु हुन्छन्। किशोरावस्थामा शरीरमा हुने...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -124,8 +133,8 @@
                   <img src="./assets/img/list/02.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                  <p>शरीरमा हेमोग्लोबिन कायम राख्न आइरन चाहिन्छ। यो रातो रक्त कोशिका को...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -133,8 +142,10 @@
                   <img src="./assets/img/list/03.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">
+                    बाँकी तेललाई बारम्बार प्रयोग गर्नु खतरनाक हुन्छ, यसले यस्ता शारीरिक समस्या निम्त्याउन सक्छ</a
+                  >
+                  <p>कुनै पनि परिकार तयार गर्न तेल महत्त्वपूर्ण र आधारभूत सामग्री हो।...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -142,7 +153,7 @@
                   <img src="./assets/img/list/07.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
+                  <a href="detail.html" class="sm_heading">अमेरिकाले दिएको थप १० लाख डोज फाइजर खोप आइपुग्यो</a>
                   <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
                 </div>
               </div>
@@ -151,8 +162,8 @@
                   <img src="./assets/img/list/08.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">होलीमा रासायनिक रंगको दुष्प्रभाव बाट बच्ने उपाय</a>
+                  <p>काठमाडौं- होली रंगहरुको पर्व हो । खुशीको पर्व हो। यो पर्वमा...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -160,8 +171,8 @@
                   <img src="./assets/img/list/01.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading"> प्रारम्भिक यौवन: मोटोपनाको कारण समयअघि बढ्दै बच्चाहरू, रोकथामका उपाय</a>
+                  <p>काठमाडौं- किशोरावस्थामा केटाकेटीहरूको शरीरमा धेरै परिवर्तनहरू सुरु हुन्छन्। किशोरावस्थामा शरीरमा हुने...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -169,8 +180,8 @@
                   <img src="./assets/img/list/02.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                  <p>शरीरमा हेमोग्लोबिन कायम राख्न आइरन चाहिन्छ। यो रातो रक्त कोशिका को...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -178,8 +189,10 @@
                   <img src="./assets/img/list/03.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">
+                    बाँकी तेललाई बारम्बार प्रयोग गर्नु खतरनाक हुन्छ, यसले यस्ता शारीरिक समस्या निम्त्याउन सक्छ</a
+                  >
+                  <p>कुनै पनि परिकार तयार गर्न तेल महत्त्वपूर्ण र आधारभूत सामग्री हो।...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -187,7 +200,7 @@
                   <img src="./assets/img/list/07.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
+                  <a href="detail.html" class="sm_heading">अमेरिकाले दिएको थप १० लाख डोज फाइजर खोप आइपुग्यो</a>
                   <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
                 </div>
               </div>
@@ -196,8 +209,8 @@
                   <img src="./assets/img/list/08.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">होलीमा रासायनिक रंगको दुष्प्रभाव बाट बच्ने उपाय</a>
+                  <p>काठमाडौं- होली रंगहरुको पर्व हो । खुशीको पर्व हो। यो पर्वमा...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -205,8 +218,8 @@
                   <img src="./assets/img/list/01.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading"> प्रारम्भिक यौवन: मोटोपनाको कारण समयअघि बढ्दै बच्चाहरू, रोकथामका उपाय</a>
+                  <p>काठमाडौं- किशोरावस्थामा केटाकेटीहरूको शरीरमा धेरै परिवर्तनहरू सुरु हुन्छन्। किशोरावस्थामा शरीरमा हुने...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -214,8 +227,8 @@
                   <img src="./assets/img/list/02.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                  <p>शरीरमा हेमोग्लोबिन कायम राख्न आइरन चाहिन्छ। यो रातो रक्त कोशिका को...</p>
                 </div>
               </div>
               <div class="news_wrapper_news">
@@ -223,8 +236,10 @@
                   <img src="./assets/img/list/03.jpg" alt="" />
                 </a>
                 <div class="news_description">
-                  <a href="detail.html" class="sm_heading">कसरी पत्ता लगाउने बच्चाको श्रवण शक्ति?</a>
-                  <p>काठमाडाैं-मस्तिष्काघात उपचार सेवामा नेपाली नसारोग चिकित्सकले हासिल गरेको उपलब्धिलाई...</p>
+                  <a href="detail.html" class="sm_heading">
+                    बाँकी तेललाई बारम्बार प्रयोग गर्नु खतरनाक हुन्छ, यसले यस्ता शारीरिक समस्या निम्त्याउन सक्छ</a
+                  >
+                  <p>कुनै पनि परिकार तयार गर्न तेल महत्त्वपूर्ण र आधारभूत सामग्री हो।...</p>
                 </div>
               </div>
             </div>
@@ -241,6 +256,128 @@
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
             <div class="detail_aside">
+              <div class="aside_box latest">
+                <div class="aside_box_heading">
+                  <div class="title">
+                    <div class="title_icon">
+                      <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="title_text">
+                      <a href="#" class="sm_heading">ताजा समाचार</a>
+                    </div>
+                  </div>
+                  <div class="heading_btn">
+                    <a href="list.html" class="view_all_btn">सबै</a>
+                  </div>
+                </div>
+                <div class="latest_news">
+                  <a href="#" class="latest_news_block">
+                    <div class="featured_image">
+                      <img src="./assets/img/gallery/01.jpg" alt="" />
+                    </div>
+                    <div class="title">
+                      <h1 class="sm_heading">स्वस्थानी पूर्णिमाका दिन जन्मिए हिमालय सोहि दिन अस्ताए</h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="latest_news">
+                  <a href="#" class="latest_news_block">
+                    <div class="featured_image">
+                      <img src="./assets/img/gallery/06.jpg" alt="" />
+                    </div>
+                    <div class="title">
+                      <h1 class="sm_heading">हिमालयन बैंकद्धारा कान्ति बाल अस्पतालमा थप दुई विल भुक्तानी काउन्टर सञ्चालनमा</h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="latest_news">
+                  <a href="#" class="latest_news_block">
+                    <div class="featured_image">
+                      <img src="./assets/img/gallery/02.jpg" alt="" />
+                    </div>
+                    <div class="title">
+                      <h1 class="sm_heading">रत्ननगर अस्पतालमा निःशुल्क ‘मुख्यमन्त्री स्वास्थ्य परीक्षण कार्यक्रम’</h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="latest_news">
+                  <a href="#" class="latest_news_block">
+                    <div class="featured_image">
+                      <img src="./assets/img/gallery/03.jpg" alt="" />
+                    </div>
+                    <div class="title">
+                      <h1 class="sm_heading">‘कर्नफ्लेक्स’ हैन मकै भटमास खाउँ</h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="latest_news">
+                  <a href="#" class="latest_news_block">
+                    <div class="featured_image">
+                      <img src="./assets/img/gallery/04.jpg" alt="" />
+                    </div>
+                    <div class="title">
+                      <h1 class="sm_heading">किटो डाइट भनेको के हो, यसले मृत्यु निम्त्याउन सक्छ?</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="aside_box popular">
+                <div class="aside_box_heading">
+                  <div class="title">
+                    <div class="title_icon">
+                      <i class="fas fa-copy"></i>
+                    </div>
+                    <div class="title_text">
+                      <a href="#" class="sm_heading">लोकप्रिय</a>
+                    </div>
+                  </div>
+                  <div class="heading_btn">
+                    <a href="list.html" class="view_all_btn">सबै</a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">१.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> अब संसारको आँखा उघार्नेछन् डा. सन्दुक रुइत </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">३.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> प्रारम्भिक यौवन: मोटोपनाको कारण समयअघि बढ्दै बच्चाहरू, रोकथामका उपाय </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">४.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">५.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">६.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> बाँकी तेललाई बारम्बार प्रयोग गर्नु खतरनाक हुन्छ, यसले यस्ता शारीरिक समस्या निम्त्याउन सक्छ </a>
+                  </div>
+                </div>
+              </div>
+
               <div class="aside_box cover">
                 <div class="cover_heading">
                   <div class="cover_stick_news">
@@ -251,180 +388,34 @@
                       </div>
                     </a>
                     <div class="aside_title">
-                      <a href="list.html" class="title_text">कभर स्टोरी</a>
+                      <a href="list.html" class="title_text">यौन स्वास्थ्य</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="cover_news_list">
                   <div class="cover_news">
-                    <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                    <a href="detail.html" class="sm_heading">कोभिड महामारीबारे एक नर्सकाे अनुभूति- ‘हामी सबै दिक्क भइसकेका छौँ’</a>
                   </div>
                   <div class="cover_news">
-                    <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                    <a href="detail.html" class="sm_heading"
+                      >मिर्गौला प्रत्यारोपण केन्द्रलाई प्रतिष्ठान बनाउने प्रस्ताव एक हप्ताभित्रै लैजाँदैछौं : डा पुकारचन्द्र श्रेष्ठ [अन्तर्वार्ता]</a
+                    >
                   </div>
                   <div class="cover_news">
-                    <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                    <a href="detail.html" class="sm_heading"
+                      >उपचार नपाई अकालमा ज्यान गुमाउनुपर्ने अवस्था अब हुन्नः स्वास्थ्यमन्त्री खतिवडा [अन्तर्वार्ता]</a
+                    >
                   </div>
                   <div class="cover_news">
-                    <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                    <a href="detail.html" class="sm_heading">‘कान्ति बन्द गर्नका लागि बाह्य शक्ति लागिपरेका छन्’</a>
                   </div>
                   <div class="cover_news">
-                    <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                    <a href="detail.html" class="sm_heading"> नर्भिकले निःशुल्क ‘क्यान्सर स्क्रिनिङ क्याम्प’ चलाउने</a>
                   </div>
                   <div class="cover_news">
-                    <a href="detail.html" class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</a>
+                    <a href="detail.html" class="sm_heading">जहाँ नर्सले गर्छन् अपरेसन, विदेशी डाक्टर कुर्दाकुर्दै गुम्छ दृष्टि‌‌…</a>
                   </div>
-                </div>
-              </div>
-              <div class="aside_box talks">
-                <div class="aside_box_heading">
-                  <div class="title">
-                    <a href="#" class="sm_heading title_text">अन्तर्वार्ता</a>
-                  </div>
-                  <div class="heading_btn">
-                    <a href="list.html" class="view_all_btn">सबै</a>
-                  </div>
-                </div>
-                <div class="latest_news">
-                  <a href="#" class="latest_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/01.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="latest_news">
-                  <a href="#" class="latest_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/06.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="latest_news">
-                  <a href="#" class="latest_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/02.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="latest_news">
-                  <a href="#" class="latest_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/03.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="latest_news">
-                  <a href="#" class="latest_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/04.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="aside_box thought">
-                <div class="aside_box_heading">
-                  <div class="title">
-                    <a href="#" class="sm_heading title_text">विचार/विश्लेषण</a>
-                  </div>
-                  <div class="heading_btn">
-                    <a href="list.html" class="view_all_btn">सबै</a>
-                  </div>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/01.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/06.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/02.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/03.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/04.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/04.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/04.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
-                </div>
-                <div class="thought_news">
-                  <a href="#" class="thought_news_block">
-                    <div class="featured_image">
-                      <img src="./assets/img/gallery/04.jpg" alt="" />
-                    </div>
-                    <div class="title">
-                      <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
-                    </div>
-                  </a>
                 </div>
               </div>
             </div>
@@ -438,18 +429,12 @@
       <div class="main_footer">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-md-4 com-sm-12">
-              <a href="index.html" class="footer_logo">
+            <div class="col-xl-3 col-md-4 com-sm-12">
+              <a href="#" class="footer_logo">
                 <img src="./assets/img/company/logo.png" alt="" />
               </a>
-            </div>
-            <div class="col-xl-4 col-md-4 col-sm-12">
-              <ul class="company_details">
-                <li>नेपइनसाइट मिडिया प्रा. लि.</li>
-                <li>अनामनगर काठमाडौं</li>
-                <li>सूचना विभाग दर्ता नं :1061/075-076</li>
-              </ul>
-              <ul class="contacts">
+
+              <ul class="contacts py-3">
                 <li class="phone">
                   <i class="fas fa-phone"></i>
                   <a href="tel:९८६६९५२३६३">+९७७ ९८६६९५२३६३</a>
@@ -481,15 +466,59 @@
                 </li>
               </ul>
             </div>
-            <div class="col-xl-4 col-md-4 com-sm-12">
-              <a href="#" class="footer_logo">
-                <img src="./assets/img/company/logo.svg" alt="" />
-              </a>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div class="copywrite">
+        <ul>
+          <li>&copy; २०२३ स्वास्थ्य सञ्चार प्रा.लि. सर्वाधिकार सुरक्षित.</li>
+          <li>नेपइनसाइट मिडिया प्रा. लि., अनामनगर, काठमाडाैं</li>
+          <li>Website By: <a href="#">SUGA INC.</a></li>
+        </ul>
+      </div>
     </footer>
+
+    <!-- Seach bar -->
+    <div class="search_bar">
+      <form name="search_form " class="search_form">
+        <input type="search" placeholder="Enter Keyword here..." required />
+        <input type="submit" value="SUBMIT" />
+      </form>
+
+      <div class="close_search">
+        <i class="fas fa-xmark"></i>
+      </div>
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

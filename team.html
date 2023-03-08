@@ -24,6 +24,10 @@
     <title>Suga Health - We Care About You</title>
   </head>
   <body>
+    <a href="#" id="back_to_top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
     <!-- Header -->
     <header class="header">
       <div class="top_bar py-4">
@@ -39,7 +43,7 @@
       <div class="container-fluid">
         <nav class="menu">
           <div class="menu_left">
-            <button class="hamburger d-lg-none">
+            <button class="hamburger">
               <span class="line"></span>
             </button>
 
@@ -52,7 +56,12 @@
           </div>
 
           <ul class="menu_items">
-            <li><a href="index.html">गृहपृष्ठ</a></li>
+            <li class="close d-lg-none">
+              <button>
+                <i class="fas fa-xmark"></i>
+              </button>
+            </li>
+            <li class="active"><a href="index.html">गृहपृष्ठ</a></li>
             <li><a href="list.html">मुख्य खबर</a></li>
             <li><a href="list.html">आँकडा</a></li>
             <li><a href="list.html">क्लिनिक</a></li>
@@ -221,23 +230,18 @@
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="main_footer">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-md-4 com-sm-12">
-              <a href="index.html" class="footer_logo">
+            <div class="col-xl-3 col-md-4 com-sm-12">
+              <a href="#" class="footer_logo">
                 <img src="./assets/img/company/logo.png" alt="" />
               </a>
-            </div>
-            <div class="col-xl-4 col-md-4 col-sm-12">
-              <ul class="company_details">
-                <li>नेपइनसाइट मिडिया प्रा. लि.</li>
-                <li>अनामनगर काठमाडौं</li>
-                <li>सूचना विभाग दर्ता नं :1061/075-076</li>
-              </ul>
-              <ul class="contacts">
+
+              <ul class="contacts py-3">
                 <li class="phone">
                   <i class="fas fa-phone"></i>
                   <a href="tel:९८६६९५२३६३">+९७७ ९८६६९५२३६३</a>
@@ -269,10 +273,35 @@
                 </li>
               </ul>
             </div>
-            <div class="col-xl-4 col-md-4 com-sm-12">
-              <a href="#" class="footer_logo">
-                <img src="./assets/img/company/logo.svg" alt="" />
-              </a>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -285,6 +314,18 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Seach bar -->
+    <div class="search_bar">
+      <form name="search_form " class="search_form">
+        <input type="search" placeholder="Enter Keyword here..." required />
+        <input type="submit" value="SUBMIT" />
+      </form>
+
+      <div class="close_search">
+        <i class="fas fa-xmark"></i>
+      </div>
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

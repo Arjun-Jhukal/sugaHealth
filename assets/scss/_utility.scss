@@ -80,8 +80,13 @@ a:focus {
 }
 
 .section_title {
+  font-size: 25px;
   color: $lightBlue_color;
   font-weight: 600;
+
+  &:hover {
+    color: $lightYellow_color;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -97,5 +102,26 @@ a:focus {
 
   p {
     font-size: 12px;
+  }
+}
+
+.overlay {
+  background: linear-gradient(to bottom, transparent, $lightBlue_color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    padding: 15px;
+
+    &:hover {
+      color: $lightYellow_color;
+    }
   }
 }

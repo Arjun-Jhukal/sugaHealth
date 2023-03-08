@@ -24,6 +24,10 @@
     <title>Suga Health - We Care About You</title>
   </head>
   <body>
+    <a href="#" id="back_to_top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
     <!-- Header -->
     <header class="header">
       <div class="top_bar py-4">
@@ -39,7 +43,7 @@
       <div class="container-fluid">
         <nav class="menu">
           <div class="menu_left">
-            <button class="hamburger d-lg-none">
+            <button class="hamburger">
               <span class="line"></span>
             </button>
 
@@ -52,7 +56,12 @@
           </div>
 
           <ul class="menu_items">
-            <li><a href="index.html">गृहपृष्ठ</a></li>
+            <li class="close d-lg-none">
+              <button>
+                <i class="fas fa-xmark"></i>
+              </button>
+            </li>
+            <li class="active"><a href="index.html">गृहपृष्ठ</a></li>
             <li><a href="list.html">मुख्य खबर</a></li>
             <li><a href="list.html">आँकडा</a></li>
             <li><a href="list.html">क्लिनिक</a></li>
@@ -127,10 +136,12 @@
                   </li>
                 </ul>
               </div>
+
               <!-- Featured Image -->
               <div class="detail_featured_image">
                 <img src="./assets/img/gallery/01.jpg" alt="" />
               </div>
+
               <!-- News Description -->
               <div class="news_detail">
                 <p>
@@ -142,6 +153,14 @@
                   अनिवार्य दर्ता गर्नु पर्ने प्रावधान छैन, जसले गर्दा यकिन तथ्यांक भेट्न सकिँदैन। तर विदेश जाने नर्सको संख्या दिनप्रतिदिन बढिरहेको
                   कुरालाई कसैले नकार्न सक्दैन।
                 </p>
+
+                <strong>कान कम सुन्ने समस्या कस्तो हो ?</strong>
+
+                <ul>
+                  <li>कान कम सुन्ने समस्या भनेको सुनाई क्षमता विस्तारै कम हुँदै जानु हो।</li>
+                  <li>८०÷९० डेसिबल भन्दा बढी छ भने बहिरोपनको नै समस्या हुन्छ।</li>
+                  <li>६० देखि ८० डेसिबलको बीचको छ भने सुस्त श्रवण भनिन्छ।</li>
+                </ul>
                 <p>
                   राज्यबाटै विभेदमा परेको नर्सिङ पेसा सरकारी र निजी अस्पतालहरुमा भइरहेको विभेदपूर्ण पारिश्रमिक तथा सेवा-सुविधाको बारेमा राज्य नै मौन
                   छ। नर्सको हकहितका लागि भनेर खोलिएका संस्था वार्षिकोत्सव मनाउन बाहेक केही नीतिगत सुधार र रचनात्मक कार्यक्रममा सक्रिय देखिँदैनन्।
@@ -153,6 +172,14 @@
                   पछुताउनु बाहेक कुनै विकल्प रहँदैन। हुन त नर्सिङ पेसा मात्र नभएर सेवाभाव र आत्मासन्तुष्टिको रुपमा पनि बुझिन्छ। नर्सिङ क्षेत्रमा
                   कार्यरत सबै जनशक्तिले स्वदेशमै सम्मानका साथ सहज जीवनयापन गर्न सक्ने वातावरण निर्माण भए सम्पूर्ण नर्स सेवाकै रुपमा काम गर्दा पनि खुसी
                   नै हुनेछन्। यस विषयमा समयमै सरोकारवालाको ध्यान जान जरुरी छ।
+                </p>
+
+                <strong>भविष्यको तस्वीरमा आर्टिफिसियल इन्टेलिजेन्सले बनायो तस्वीर</strong>
+
+                <p>
+                  उक्त च्याटबटसँग सन् २३०० मा पृथ्वी कस्तो हुनेछ भनेर सोधिएको थियो । त्यसको जवाफमा id Journey ले चारवटा तस्वीर बनाएर दियो । ती
+                  तस्वीरमा पृथ्वी आजभन्दा धेरै बदलिएको देखिन्छ । एउटा भागमा तपाईंले धेरै बरफ देख्न सक्नुहुन्छ । त्यस्तै अर्को हिस्सामा पहाड र पानी
+                  देखिन्छ । तेस्रो तस्वीरमा हरियो र समतल भाग निकै धेरै छ ।
                 </p>
               </div>
               <!-- Share Box -->
@@ -192,15 +219,23 @@
                   </li>
                 </ul>
               </div>
+
               <!-- From Writer -->
               <div class="from_writer mb-5">
                 <div class="writer_box mb-3">
-                  <div class="author d-flex gap-1">
+                  <div class="author d-flex gap-1 align-items-center">
                     <div class="profile">
                       <img src="./assets/img/profile/01.jpg" alt="" />
                     </div>
                     <div class="author_detail">
                       <a href="#" class="sm_heading">अन्शु खनाल</a>
+                    </div>
+                  </div>
+                  <div class="category_box_heading">
+                    <div class="title">
+                      <div class="title_text">
+                        <a href="list.html" class="sm_heading">लेखकबाट थप</a>
+                      </div>
                     </div>
                   </div>
                   <ul class="socials">
@@ -212,17 +247,7 @@
                   </ul>
                 </div>
 
-                <div class="category_box">
-                  <div class="category_box_heading">
-                    <div class="title">
-                      <div class="title_icon">
-                        <i class="fas fa-copy"></i>
-                      </div>
-                      <div class="title_text">
-                        <a href="list.html" class="sm_heading">लेखकबाट थप</a>
-                      </div>
-                    </div>
-                  </div>
+                <div>
                   <div class="news_wrapper_news">
                     <a href="detail.html" class="featured_image">
                       <img src="./assets/img/list/01.jpg" alt="" />
@@ -301,6 +326,7 @@
                   </li>
                 </ul>
               </div>
+
               <!-- Comments Section -->
               <div class="comment_wrapper mt-5">
                 <div class="category_box_heading">
@@ -314,6 +340,7 @@
                   </div>
                 </div>
               </div>
+
               <!-- Related News Section -->
               <div class="related_news mt-5">
                 <div class="category_box_heading">
@@ -439,6 +466,61 @@
                       <h1 class="sm_heading">किन झमझमाउँछ हातखुट्टा?</h1>
                     </div>
                   </a>
+                </div>
+              </div>
+              <div class="aside_box popular">
+                <div class="aside_box_heading">
+                  <div class="title">
+                    <div class="title_icon">
+                      <i class="fas fa-copy"></i>
+                    </div>
+                    <div class="title_text">
+                      <a href="#" class="sm_heading">लोकप्रिय</a>
+                    </div>
+                  </div>
+                  <div class="heading_btn">
+                    <a href="list.html" class="view_all_btn">सबै</a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">१.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> अब संसारको आँखा उघार्नेछन् डा. सन्दुक रुइत </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">३.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> प्रारम्भिक यौवन: मोटोपनाको कारण समयअघि बढ्दै बच्चाहरू, रोकथामका उपाय </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">४.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">५.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> आइरन युक्त ५ खानेकुरा, हेमोग्लोबिनको कमी हट्छ </a>
+                  </div>
+                </div>
+                <div class="popular_news">
+                  <div class="popular_news_index">
+                    <span class="md_heading">६.</span>
+                  </div>
+                  <div class="popular_news_title">
+                    <a href="#" class="sm_heading"> बाँकी तेललाई बारम्बार प्रयोग गर्नु खतरनाक हुन्छ, यसले यस्ता शारीरिक समस्या निम्त्याउन सक्छ </a>
+                  </div>
                 </div>
               </div>
               <div class="aside_box cover">
@@ -638,18 +720,12 @@
       <div class="main_footer">
         <div class="container">
           <div class="row">
-            <div class="col-xl-4 col-md-4 com-sm-12">
-              <a href="index.html" class="footer_logo">
+            <div class="col-xl-3 col-md-4 com-sm-12">
+              <a href="#" class="footer_logo">
                 <img src="./assets/img/company/logo.png" alt="" />
               </a>
-            </div>
-            <div class="col-xl-4 col-md-4 col-sm-12">
-              <ul class="company_details">
-                <li>नेपइनसाइट मिडिया प्रा. लि.</li>
-                <li>अनामनगर काठमाडौं</li>
-                <li>सूचना विभाग दर्ता नं :1061/075-076</li>
-              </ul>
-              <ul class="contacts">
+
+              <ul class="contacts py-3">
                 <li class="phone">
                   <i class="fas fa-phone"></i>
                   <a href="tel:९८६६९५२३६३">+९७७ ९८६६९५२३६३</a>
@@ -681,15 +757,59 @@
                 </li>
               </ul>
             </div>
-            <div class="col-xl-4 col-md-4 com-sm-12">
-              <a href="#" class="footer_logo">
-                <img src="./assets/img/company/logo.svg" alt="" />
-              </a>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 col-md-4 col-sm-12">
+              <h1 class="md_heading">विशेष श्रृंखला</h1>
+              <ul class="links">
+                <li><a href="team.html">हाम्रो टीम</a></li>
+                <li><a href="team.html">प्रयोगका सर्त</a></li>
+                <li><a href="team.html"> विज्ञापन</a></li>
+                <li><a href="team.html">प्राइभेसी पोलिसी </a></li>
+                <li><a href="team.html">सम्पर्क</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+      <div class="copywrite">
+        <ul>
+          <li>&copy; २०२३ स्वास्थ्य सञ्चार प्रा.लि. सर्वाधिकार सुरक्षित.</li>
+          <li>नेपइनसाइट मिडिया प्रा. लि., अनामनगर, काठमाडाैं</li>
+          <li>Website By: <a href="#">SUGA INC.</a></li>
+        </ul>
+      </div>
     </footer>
+
+    <!-- Seach bar -->
+    <div class="search_bar">
+      <form name="search_form " class="search_form">
+        <input type="search" placeholder="Enter Keyword here..." required />
+        <input type="submit" value="SUBMIT" />
+      </form>
+
+      <div class="close_search">
+        <i class="fas fa-xmark"></i>
+      </div>
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
