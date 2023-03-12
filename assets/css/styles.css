@@ -908,6 +908,21 @@ a:focus {
   content: "\f105";
 }
 
+.layout_8 {
+  padding: 50px 0;
+}
+.layout_8_news {
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+.layout_8_news img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .pagination {
   padding: 15px 0;
   border-top: 1px solid #f2f2f2;
@@ -1174,36 +1189,31 @@ ul.socials li a i {
 .team .category_box {
   overflow: hidden;
 }
-.team .thead tr th {
-  color: #97bc2a;
-  font-weight: 600;
-  font-size: 20px;
+.team_member {
+  margin-top: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  padding: 15px 0;
 }
-.team .tbody .team_member:not(:last-child) {
-  border-bottom: 1px solid #f2f2f2;
-}
-.team .tbody .team_member .member_profile .profile_image {
-  min-width: 50px;
-  width: 50px;
-  margin: 0 auto;
-}
-.team .tbody .team_member .member_profile .profile_image img {
-  width: 100%;
-  height: 50px;
-  border-radius: 10px;
+.team_member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.team .tbody .team_member .socials {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
+.team_member .profile_details {
+  padding: 15px 0;
 }
-.team .tbody .team_member:hover .socials {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(0%);
+.team_member .profile_details h1 {
+  margin: 0;
+}
+.team_member .socials {
+  justify-content: center;
+  gap: 15px;
+}
+.team_member:hover {
+  box-shadow: 0 3px 10px #ccc;
 }
 
 .search_bar {
@@ -1270,5 +1280,5 @@ ul.socials li a i {
   border-radius: 10px;
 }
 #back_to_top:hover {
-  box-shadow: 0 3px 10px #ccc;
+  color: #41bdc5;
 }/*# sourceMappingURL=styles.css.map */

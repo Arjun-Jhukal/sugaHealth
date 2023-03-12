@@ -82,6 +82,7 @@
   border-radius: 10px;
 
   &:hover {
-    box-shadow: $box-shadow1;
+    // box-shadow: $box-shadow1;
+    color: $lightBlue_color;
   }
 }

@@ -1,3 +1,8 @@
+// Date
+const today = new Date();
+let text = today.toLocaleDateString();
+console.log(text);
+
 // Show and hide search
 var searchIcon = document.querySelector(".search_icon");
 searchIcon.addEventListener("click", () => {
@@ -38,7 +43,7 @@ const menuLogo = document.querySelector(".menu .logo");
 const menuLeft = document.querySelector(".menu_left");
 
 const stickyHeader = () => {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 330) {
     header.classList.add("sticky_header");
     // menuLeft.classList.add("sticky_active");
     menuLeft.style.display = "flex";
